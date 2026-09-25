@@ -7,7 +7,6 @@ const Nav = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white">
       <div className="relative mx-auto flex h-20 max-w-7xl items-center justify-between px-4 md:px-8">
-
         {/* Hamburger - Mobile */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -17,12 +16,11 @@ const Nav = () => {
         </button>
 
         {/* Logo */}
-        <a href="#home" className="md:static absolute left-1/2 -translate-x-1/2 md:translate-x-0">
-          <img
-            src={logo}
-            alt="Dev Stack"
-            className="h-9 w-auto"
-          />
+        <a
+          href="#home"
+          className="md:static absolute left-1/2 -translate-x-1/2 md:translate-x-0"
+        >
+          <img src={logo} alt="Dev Stack" className="h-9 w-auto" />
         </a>
 
         {/* Desktop Menu */}
@@ -76,7 +74,6 @@ const Nav = () => {
       {menuOpen && (
         <div className="border-t border-gray-200 bg-white md:hidden">
           <div className="flex flex-col px-4 py-3">
-
             <a
               href="#home"
               onClick={() => setMenuOpen(false)}
@@ -116,7 +113,6 @@ const Nav = () => {
             >
               Contact
             </a>
-
           </div>
         </div>
       )}
